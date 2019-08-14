@@ -1,0 +1,79 @@
+.middle_top {
+	width: 1190px;
+	height: 38px;
+	/*background-color: aqua;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+.fenlei {
+	width: 190px;
+	height: 38px;
+	background-color: #FF9900;
+	float: left;
+}
+.fenlei > span {
+	color: white;
+	font-size: 13px;
+	font-weight: 700;
+	/*margin-left: 32px;*/
+	line-height: 38px;
+}
+.fenlei > i {
+	width: 14px;
+	height: 14px;
+	background: url(../img/index.png);
+	float: left;
+	margin: 14px 5px auto 5px;
+	display: inline-block;
+}
+.nav_1 {
+	width: 1000px;
+	height: 38px;
+	/*background-color: red;*/
+	float: left;
+}
+.nav_1 li {
+	list-style: none;
+	float: left;
+}
+.nav_1 li a {
+	text-decoration: none;
+}
+.nav_1_left {
+	font-size: 18px;
+	margin: 0 14px;
+}
+.nav_1_left a {
+	text-align: center;
+	line-height: 0px;
+	color: black;
+	font-weight: 700;
+}
+.nav_1_right {
+	font-size: 15px;
+	margin: 0 11px;
+}
+.nav_1_right a {
+	text-align: center;
+	line-height: 38px;
+	color: black;
+	font-weight: 700;
+	font-size: 15px;
+	color: black;
+}
+.nav_1_left a:hover{
+	color: #f60;
+}
+.nav_1_left span {
+	line-height: 0px;
+	color: #dddddd;
+}
+.nav_1_right i {
+	width: 14px;
+	height: 17px;
+	float: right;
+	background-image: url(../img/index.png);
+	background-position: -345px -214px;
+}
+
+/***********************/

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset1.css">
+  	<link rel="stylesheet" type="text/css" href="../css/top.css"/>
+  	<link rel="stylesheet" type="text/css" href="../css/bottom.css"/>
+  <title>Document</title>
+  <style>
+    #order li {
+      border: 1px solid orange;
+    }
+    #order li div.title {
+      background-color: #ccc;
+      line-height: 30px;
+      padding: 5px;
+      border-bottom: 1px solid orange;
+    }
+    #order li div.order-goods {
+      background-color: #333;
+    }
+    #order li div.order-goods div{
+      border-bottom: 1px solid orange;
+    }
+    #order li div.order-goods div img {
+      width: 100px;
+    }
+    .cancel-order {
+      float: right;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 5px;
+      background-color: orange;
+      color: white;
+      cursor: pointer;
+    }
+    .cancel-order:hover {
+      background-color: white;
+      color: orange;
+    }
+    .space{
+    	min-height: 600px;
+    }
+  </style>
+
+</head>
+<body>
+ <div class="top">
+			<div class="top_in">
+				<ul>
+					<li class="nav">
+						<a href="#">
+								网站导航
+							</a>
+					</li>
+					<li class="ruzhu">
+						<a href="#">
+								商家入驻
+							</a>
+						<div class="rzxx">
+							<p><a href="#">服务市场</a></p>
+							<p><a href="#">金融中心</a></p>
+							<p><a href="#">商家论坛</a></p>
+							<p><a href="#">培训中心</a></p>
+							<p><a href="#">增值服务</a></p>
+						</div>
+					</li>
+					<li class="login">
+						<a href="javascript:" class="login_name" onclick="tiao()">请登录</a>
+					</li>
+					<li>
+						<a href="javascript:localStorage.clear();location.reload()" id="loginout">退出登录</a>
+					</li>
+					<li class="zhuce">
+						<a href="../index.html">注册有礼<i></i></a>
+					</li>
+					<li class="dingdan">
+						<a href="#">
+								我的订单
+							</a>
+						<div class="ddxx">
+							<p><a href="#">待支付</a></p>
+							<p><a href="#">待收货</a></p>
+							<p><a href="#">待评价</a></p>
+							<p><a href="#">修改订单</a></p>
+						</div>
+					</li>
+					<li class="yigou">
+						<a href="#">
+								我的易购
+							</a>
+						<div class="ygxx">
+							<div class="yg_pic">
+								<img src="../img/0000000000_01_60x60.jpg" class="yg_logo" />
+							</div>
+							<div class="daka">
+								<p class="login_name"><a href="login.html">请登录</a></p>
+								<p>打卡</p>
+							</div>
+						</div>
+					</li>
+					<li class="car"><a href="web/car.html"><i></i>购物车</a></li>
+					<li class="yifubao"><a href="#">易付宝</a></li>
+					<li class="fuwu"><a href="#">客户服务</a></li>
+					<li class="caigou"><a href="#">企业采购</a></li>
+					<li class="phone"><a href="#"><i></i>手机苏宁</a></li>
+
+				</ul>
+			</div>
+		</div>
+<script src="../js/top.js" type="text/javascript" charset="utf-8"></script>
+  <main>
+    <ul id="order">
+
+    </ul>
+  </main>
+  <div class="space">
+  	
+  </div>
+  <div class="end">
+				<div>
+					<p class="line-left"></p>
+					<span>END</span>
+					<p class="line-right"></p>
+				</div>
+			</div>
+		
+		<!--底部-->
+		<div class="ng_bottom">
+			<div class="ng_bottom_frame">
+				<div class="ng-promise">
+					<ul>
+						<li>
+							<img src="../img/149386338830969041.jpg" />
+							<strong>正品保障</strong>
+							<p>正品保障、提供发票</p>
+						</li>
+						<li>
+							<img src="../img/149386339441846551.jpg" />
+							<strong>急速物流</strong>
+							<p>如约送货、送货入户</p>
+						</li>
+						<li>
+							<img src="../img/149386340040069121.jpg" />
+							<strong>售后无忧</strong>
+							<p>退换无忧、维修无忧</p>
+						</li>
+						<li>
+							<img src="../img/149386340760421563.jpg" />
+							<strong>特色服务</strong>
+							<p>私人订制家电套餐</p>
+						</li>
+						<li>
+							<img src="../img/149386341371637387.jpg" />
+							<strong>帮助中心</strong>
+							<p>您的购物指南</p>
+						</li>
+					</ul>
+				</div>
+				<div class="ng-help-box">
+					<dl>
+						<dt>购物指南</dt>
+						<dd>导购演示</dd>
+						<dd>免费注册</dd>
+						<dd>会员等级</dd>
+						<dd>常见问题</dd>
+						<dd>品牌大全</dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>苏宁支付</dd>
+						<dd>网银支付</dd>
+						<dd>快捷支付</dd>
+						<dd>分期付款</dd>
+						<dd>货到付款</dd>
+						<dd>任性付支付</dd>
+					</dl>
+					<dl>
+						<dt>物流配送</dt>
+						<dd>免运费政策</dd>
+						<dd>配送服务承诺</dd>
+						<dd>签收验货</dd>
+						<dd>物流查询</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>退换货政策</dd>
+						<dd>退换货流程</dd>
+						<dd>购买延保服务</dd>
+						<dd>退款说明</dd>
+						<dd>退换货申请</dd>
+						<dd>维修/保养</dd>
+					</dl>
+					<dl>
+						<dt>商家服务</dt>
+						<dd>商家入驻</dd>
+						<dd>培训中心</dd>
+						<dd>广告服务</dd>
+						<dd>商家帮助</dd>
+						<dd>服务市场</dd>
+						<dd>规则中心</dd>
+					</dl>
+					<dl>
+						<dt>身边苏宁</dt>
+						<dd>全国300个城市
+							<br />1600家门店
+							<br />3000个服务点
+							<br />为您提供最贴心的
+							<br />服务！</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--脚页-->
+		<footer>
+			<div class="frame">
+				<p class="black">
+					<a href="#">苏宁控股</a>
+					<span>|</span>
+					<a href="#">苏宁云商</a>
+					<span>|</span>
+					<a href="#">苏宁互联</a>
+					<span>|</span>
+					<a href="#">苏宁金融</a>
+					<span>|</span>
+					<a href="#">苏宁支付</a>
+					<span>|</span>
+					<a href="#">PPTV</a>
+					<span>|</span>
+					<a href="#">红孩子</a>
+					<span>|</span>
+					<a href="#">苏宁物流</a>
+					<span>|</span>
+					<a href="#">手机苏宁</a>
+					<span>|</span>
+					<a href="#">苏宁酒店</a>
+					<span>|</span>
+					<a href="#">知识产权举报</a>
+				</p>
+				<p class="black">
+					<a href="#">联系我们</a>
+					<span>|</span>
+					<a href="#">招聘英才</a>
+					<span>|</span>
+					<a href="#">供应商入驻</a>
+					<span>|</span>
+					<a href="#">广告平台</a>
+					<span>|</span>
+					<a href="#">苏宁联盟</a>
+					<span>|</span>
+					<a href="#">苏宁招标</a>
+					<span>|</span>
+					<a href="#">友情链接</a>
+					<span>|</span>
+					<a href="#">法律申明</a>
+					<span>|</span>
+					<a href="#">用户体验提升计划</a>
+					<span>|</span>
+					<a href="#">股东会员认证</a>
+				</p>
+				<p class="gray">
+					<span>Copyright© 2002-2017 ，苏宁云商集团股份有限公司版权所有</span>
+					<a href="#">苏ICP备10207551号-4</a>
+					<span>|</span>
+					<a href="#">苏B1-20130131</a>
+					<span>|</span>
+					<a href="#">苏B2-20130376</a>
+				</p>
+				<p class="gray">
+					<a href="#">苏B2-20130391</a>
+					<span>出版物经营许可证新出发苏批字第A-243号</span>
+					<span>|</span>
+					<span>互联网药品信息服务资格证书</span>
+					<a href="#">（苏）-非经营性-2016-0005</a>
+				</p>
+				<p class="gray">
+					<span>本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</span>
+				</p>
+				<div class="bottom">
+					<a href="#"><img src="../img/chengxin.png" /></a>
+					<a href="#"><img src="../img/unicom.png" /></a>
+					<a href="#"><img src="../img/dianxin.jpg" /></a>
+					<a href="#"><img src="../img/dianzi.png" /></a>
+				</div>
+			</div>
+		</footer>
+
+  
+  
+  <script src="../js/myajax.js" charset="utf-8"></script>
+  <script>
+    var oOrder = document.querySelector('#order');
+    myajax.get('http://h6.duchengjiu.top/shop/api_order.php', {token: localStorage.token}, function(err, responseText){
+      var json = JSON.parse(responseText);
+      console.log(json);
+      var data = json.data;
+      if (data.length === 0) {
+        oOrder.innerHTML = "<h3>您的订单为空</h3>";
+        return;
+      }
+      for (var i = 0; i < data.length; i++) {
+        var obj = data[i];
+        //遍历商品列表，拼装HTML
+        var goodsHTML = '';
+        for (var j = 0; j < obj.goods_list.length; j++) {
+          var goods = obj.goods_list[j];
+          goodsHTML += `
+            <div>
+              ${goods.goods_name}
+              <img src="${goods.goods_thumb}">
+              单价：${goods.goods_price}
+              数量：${goods.goods_number}
+              小计：${goods.goods_price * goods.goods_number}
+            </div>
+          `;
+        }
+        //一件商品的总价
+        oOrder.innerHTML += `
+                          <li>
+                            <div class="title">收货人：${obj.consignee} 总价:${obj.total_prices} <span data-id="${obj.order_id}" class="cancel-order">取消订单</span></div>
+                            <div class="order-goods">
+                            ${goodsHTML}
+                            </div>
+                          </li>
+                          `;
+      }
+    });
+
+    oOrder.onclick = function(event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement;
+      if (target.className === 'cancel-order') {
+        if (!confirm('确认要取消订单吗?')) {
+          return;
+        }
+        var order_id = target.dataset.id;
+        myajax.post('http://h6.duchengjiu.top/shop/api_order.php?token='+localStorage.token+'&status=cancel', {order_id}, function(err, responseText) {
+          var json = JSON.parse(responseText);
+          if (json.code === 0) {
+            alert('订单取消成功');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

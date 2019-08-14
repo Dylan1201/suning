@@ -1,0 +1,48 @@
+.ico{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.ico_phone{
+	background: url(../img/tel.png) no-repeat 6px 8px;
+}
+.ico_appliances{
+	background: url(../img/appliances.png) no-repeat 6px 8px;
+}
+.ico_kitchen{
+	background: url(../img/kitchen.png) no-repeat 6px 8px ;
+}
+.ico_computer{
+	background: url(../img/computer.png) no-repeat 6px 10px;
+	background-size: 16px;
+}
+.ico_house{
+	background: url(../img/house.png) no-repeat 6px 8px;
+}
+.ico_food{
+	background: url(../img/food.png) no-repeat 6px 8px;
+}
+.ico_make_up{
+	background: url(../img/make_up.png) no-repeat 6px 8px;
+}
+.ico_baby{
+	background: url(../img/baby.png) no-repeat 6px 8px;
+}
+.ico_exercise{
+	background: url(../img/exercise.png) no-repeat 6px 8px;
+}
+.ico_clothing{
+	background: url(../img/clothing.png) no-repeat 6px 8px;
+}
+.ico_shoe{
+	background: url(../img/shoe.png) no-repeat 6px 8px;
+}
+.ico_automobile{
+	background: url(../img/automobile.png) no-repeat 6px 8px;
+}
+.ico_book{
+	background: url(../img/book.png) no-repeat 6px 8px;
+}
+.ico_money{
+	background: url(../img/money.png) no-repeat 6px 8px ;
+}

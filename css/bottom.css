@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+footer{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.black{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+}
+.black span{
+	margin: 0 8px
+}
+.black a{
+	color: #666666;
+	text-decoration: none;
+}
+.black a:hover{
+	color: #f60
+}
+.gray{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+.gray span{
+	margin: 0 8px
+}
+.gray a{
+	color: #999;
+	text-decoration: none;
+}
+.gray a:hover{
+	color: #f60
+}
+footer .bottom{
+	float: none;
+    margin: 0 auto;
+    height: 25px;
+    width: 1000px;
+    margin-top: 5px;
+    text-align: center;
+}
+footer .bottom a{
+	margin-right: 8px;
+	overflow: hidden;
+}
+.ng_bottom{
+	
+	min-width: 1300px;
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    border-top: 1px solid #e7e7e7;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.ng_bottom_frame{
+	width: 1250px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ng-promise{
+	width: 100%;
+	padding: 12px 0;
+	height: 73px;
+	border-bottom: 1px solid #eaeaea;
+}
+.ng-promise li{
+	float: left;
+	width: 250px;
+	list-style: none;
+}
+.ng-promise li img{
+	float: left;
+	margin-right: 8px
+}
+.ng-promise li strong{
+	line-height: 24px;
+	font-size: 14px;
+}
+.ng-promise li p{
+	line-height: 24px;
+	font-size: 14px;
+	color: #545454;
+}
+.ng-help-box{
+	width: 100%;
+}
+.ng-help-box dl{
+	width: 208px;
+	float: left;
+    height: 170px;
+}
+.ng-help-box dt{
+	width: 100%;
+    line-height: 40px;
+    font-weight: 700;
+    color: #545454;
+    height: 35px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.ng-help-box dd{
+    line-height: 22px;
+    color: #545454;
+    font-size: 12px;
+}
+.ng-help-box dd:hover{
+	color: #f60;
+	cursor: pointer;
+}
+.end{
+	
+    width: 100%;
+    z-index: -2;
+    height: 60px;
+    font: 18px/22px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    background: #F2F2F2;
+}
+.end div{
+	color: #CCC;
+	width: 360px;
+	margin: 0 auto;
+}
+.end span{
+	margin: 0 50px ;
+	display: inline-block;
+}
+.end p{
+	display: inline-block;
+	width: 97px;
+    height: 1px;
+    background: #CCC;
+    margin-bottom: 5px;
+}

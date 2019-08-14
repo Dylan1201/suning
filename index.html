@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/tittle.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+		<link rel="stylesheet" type="text/css" href="css/aside.css" />
+		<link rel="stylesheet" type="text/css" href="css/ico.css" />
+		<link rel="stylesheet" type="text/css" href="css/bottom.css" />
+
+</head>
+
+	<body>
+
+		<!--侧边栏-->
+		<aside>
+			<div class="aside_top">
+				<div class="aside_top_top">
+					<div class="users">
+						<div class="users_box">
+							<div class="yg_pic">
+								<img src="img/0000000000_01_60x60.jpg" class="yg_logo" />
+							</div>
+							<div class="daka">
+								<p class="login_name">请登录</p>
+								<div>打卡</div>
+							</div>
+						</div>
+						<!--<div class="users_box">
+							<p class="login_name">请登录</p>
+							<div class="yg_pic">
+								<img src="img/0000000000_01_60x60.jpg" class="yg_logo" />		
+							</div>
+							<div class="daka">
+								
+								<div>打卡</div>
+							</div>
+						</div>-->
+					</div>
+					<div class="shopping_cart">
+						<i></i> 购
+						<br />物
+						<br />车
+						<div class="shopping_cart_box">
+							<table>
+								<tr>
+									<td>商品ID</td>
+								</tr>
+								<tr>
+									<td>图片</td>
+								</tr>
+								<tr>
+									<td>名称</td>
+								</tr>
+								<tr>
+									<td>数量</td>
+								</tr>
+								<tr>
+									<td>单价</td>
+								</tr>
+								<tr>
+									<td>总价</td>
+								</tr>
+							</table>
+							<div>小计：<span id="sum">0</span></div>
+						</div>
+					</div>
+					<div class="information box">
+						<div class="information_box box">消息</div>
+					</div>
+				</div>
+				<div class="aside_top_bottom">
+					<div class="manage box">
+						<div class="manage_box box">理财</div>
+					</div>
+					<div class="footprint box">
+						<div class="footprint_box box">足迹</div>
+					</div>
+					<div class="sign_in box">
+						<div class="sign_in_box box">签到</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="aside_bottom">
+				<div class="hidden"></div>
+				<div class="consult box">
+					<div class="consult_box box">在线咨询</div>
+				</div>
+				<div class="feedback box">
+					<div class="feedback_box box">意见反馈</div>
+				</div>
+				<div class="QR_code box">
+					<div class="QR_code_box box"><img src="img/1YM.png" width="130px" /></div>
+				</div>
+				<div class="back_top box">
+					<div class="back_top_box box">返回顶部</div>
+				</div>
+			</div>
+		</aside>
+
+		<div class="big_box">
+			<!--顶部-->
+			<div class="top">
+				<div class="top_in">
+					<ul>
+						<li class="nav">
+							<a href="#">
+								网站导航
+							</a>
+						</li>
+						<li class="ruzhu">
+							<a href="#">
+								商家入驻
+							</a>
+							<div class="rzxx">
+								<p><a href="#">服务市场</a></p>
+								<p><a href="#">金融中心</a></p>
+								<p><a href="#">商家论坛</a></p>
+								<p><a href="#">培训中心</a></p>
+								<p><a href="#">增值服务</a></p>
+							</div>
+						</li>
+						<li class="login">
+							<a href="javascript:" class="login_name" onclick="tiao()">请登录</a>
+						</li>
+						<li>
+							<a href="javascript:localStorage.clear();location.reload()" id="loginout">退出登录</a>
+						</li>
+						<li class="zhuce">
+							<a href="web/register.html">注册有礼<i></i></a>
+						</li>
+						<li class="dingdan">
+							<a href="#">
+								我的订单
+							</a>
+							<div class="ddxx">
+								<p><a href="#">待支付</a></p>
+								<p><a href="#">待收货</a></p>
+								<p><a href="#">待评价</a></p>
+								<p><a href="#">修改订单</a></p>
+							</div>
+						</li>
+						<li class="yigou">
+							<a href="#">
+								我的易购
+							</a>
+							<div class="ygxx">
+								<div class="yg_pic">
+									<img src="img/0000000000_01_60x60.jpg" class="yg_logo" />
+								</div>
+								<div class="daka">
+									<p class="login_name"><a href="web/login.html">请登录</a></p>
+									<p>打卡</p>
+								</div>
+							</div>
+						</li>
+						<li class="car"><a href="web/car.html"><i></i>购物车</a></li>
+						<li class="yifubao"><a href="#">易付宝</a></li>
+						<li class="fuwu"><a href="#">客户服务</a></li>
+						<li class="caigou"><a href="#">企业采购</a></li>
+						<li class="phone"><a href="#"><i></i>手机苏宁</a></li>
+
+					</ul>
+				</div>
+			</div>
+
+			<!--搜索框以及下面内容-->
+			<div class="nex_top">
+				<div class="logo">
+					<img src="img/logo.png" width="190px" height="90px" />
+				</div>
+				<div class="guanggao">
+					<img src="img/149975964596934162.gif" width="160px" height="100px" />
+				</div>
+				<div class="box_1">
+
+					<div class="" style="width: 565px;height: 100px;">
+						<div class="search">
+							<input type="text" id="search" placeholder="海尔超级品牌日" />
+						</div>
+						<div class="sousuo">
+							<a href="#"><img src="img/sousuo.png" /></a>
+						</div>
+
+						<div class="lianjie">
+							<ul>
+								<li><a href="#">空调</a></li>
+								<li><a href="#">TCL直降千元</a></li>
+								<li><a href="#">冰箱</a></li>
+								<li><a href="#">净水器</a></li>
+								<li><a href="#">曲面电视</a></li>
+								<li><a href="#">笔记本</a></li>
+								<li><a href="#">苏泊尔</a></li>
+								<li><a href="#">耳机</a></li>
+								<li><a href="#">s8+</a></li>
+								<li><a href="#">国米版</a></li>
+								<li><a href="#">奶粉</a></li>
+								<li><a href="#">抽纸</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="erweima">
+					<img src="img/erweima.png" class="erweima_1" />
+				</div>
+			</div>
+			<!--中间部分导航栏-->
+
+			<div class="middle_top">
+				<div class="fenlei">
+					<i></i>
+					<span>全部商品分类</span>
+				</div>
+				<div class="nav_1">
+					<ul id="ul">
+						<li class="nav_1_left index">
+							<a href="index.html">首页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--轮播图以及导航-->
+			<div class="middle">
+				<div class="middle_box">
+					<div class="middle_left">
+						<ul id="tou_bu" class="navigation_bar">
+							<li class="one">
+								<i class="ico_phone ico"></i>
+								<a class="cellphone" href="#">手机</a> / <a href="#">运营商</a> / <a href="#">智能数码</a>
+								<div class="list">
+									<ul>
+										<li><a href="">电器城</a></li>
+										<li><a href="">手机频道</a></li>
+										<li><a href="">智能数码</a></li>
+										<li><a href="">以旧换新</a></li>
+										<li><a href="">网上营业厅</a></li>
+										<li><a href="">企业采购</a></li>
+										<li><a href="">海外购</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">手机通讯</a></li>
+											<li><a href="">手机配件</a></li>
+											<li><a href="">智能设备</a></li>
+											<li><a href="">影音盒子</a></li>
+											<li><a href="">电子教育</a></li>
+											<li><a href="">苏宁互联</a></li>
+											<li><a href="">营业厅</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a style="color: #FF9900;" href="">【三星Note8预定送豪礼】</a></li>
+											<li><a href="">全部手机</a></li>
+											<li><a href="">保iPhone险</a></li>
+											<li><a style="color: #FF9900;" href="">小米</a></li>
+											<li><a style="color: #FF9900;" href="">荣耀</a></li>
+											<li><a href="">华为</a></li>
+											<li><a href="">三星</a></li>
+											<li><a href="">魅族</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【iPhone新品配件满5减5】</a></li>
+											<li><a href="">苹果周边</a></li>
+											<li><a href="">手机壳</a></li>
+											<li><a href="">手机贴膜</a></li>
+
+											<li><a href="">手机储存卡</a></li>
+											<li><a href="">移动电源</a></li>
+											<li><a href="">数据线</a></li>
+										</ol>
+										<ol>
+											<li><a style="color: #FF9900;" href="">【智能家居】</a></li>
+											<li><a href="">智能手环</a></li>
+											<li><a href="">智能手表</a></li>
+											<li><a href="">VR眼镜</a></li>
+											<li><a href="">智能摄像头</a></li>
+											<li><a href="">体感车</a></li>
+											<li><a href="">智能家居</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">运动耳机</a></li>
+											<li><a href="">耳机/耳麦</a></li>
+											<li><a href="">MP3</a></li>
+											<li><a href="">录音笔</a></li>
+											<li><a href="">影音配件</a></li>
+											<li><a style="color: #FF9900;" href="">蓝牙音箱</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">学生平板</a></li>
+											<li><a href="">点读机</a></li>
+											<li><a href="">学习机</a></li>
+											<li><a href="">电子书</a></li>
+											<li><a href="">儿童手表</a></li>
+											<li><a href="">学生手机</a></li>
+											<li><a href="">电子词典</a></li>
+											<li><a href="">校园一卡通</a></li>
+										</ol>
+										<ol>
+
+											<li><a style="color: #FF9900;" href="">【30元靓号】</a></li>
+											<li><a href="">选号入网</a></li>
+											<li><a href="">靓号中心</a></li>
+										</ol>
+										<ol>
+
+											<li><a style="color: #FF9900;" href="">【流量无限用】</a></li>
+											<li><a href="">选号码</a></li>
+											<li><a href="">办套餐</a></li>
+										</ol>
+									</div>
+
+								</div>
+
+							</li>
+							<li>
+								<i class="ico_appliances ico"></i>
+								<a class="cellphone" href="#">空调 </a> / <a href="#">电视 </a> / <a href="#">冰箱</a> / <a href="#">洗衣机</a>
+								<div class="list">
+									<ul>
+										<li><a href="">电器城</a></li>
+										<li><a href="">彩电频道</a></li>
+										<li><a href="">冰箱/洗衣机频道</a></li>
+										<li><a href="">空调频道</a></li>
+										<li><a href="">以旧换新</a></li>
+										<li><a href="">智能家电</a></li>
+										<li><a href="">企业采购</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">空调</a></li>
+											<li><a href="">电视</a></li>
+											<li><a href="">冰箱</a></li>
+											<li><a href="">洗衣机</a></li>
+											<li><a href="">冷柜</a></li>
+											<li><a href="">影音</a></li>
+											<li><a href="">客服中心</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a style="color: #FF9900;" href="">【家装升级周  用劵省100】</a></li>
+											<li><a href="">柜机</a></li>
+											<li><a href="">挂机</a></li>
+											<li><a href="">中央空调</a></li>
+											<li><a style="color: #FF9900;" href=""> 【变频】</a></li>
+											<li><a href="">1匹</a></li>
+											<li><a href="">2匹</a></li>
+											<li><a href="">3匹</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【电视满千减百】</a></li>
+											<li><a href="">平板电视</a></li>
+											<li><a style="color: #FF9900;" href="">【4k超高清】</a></li>
+											<li><a href="">海信</a></li>
+
+											<li><a href="">55英寸电视</a></li>
+											<li><a href="">智能电视</a></li>
+											<li><a href="">创维</a></li>
+										</ol>
+										<ol>
+											<li><a style="color: #FF9900;" href="">【洗衣满1000减100】</a></li>
+											<li><a style="color: #FF9900;" href="">【对门开】</a></li>
+											<li><a href="">多门</a></li>
+											<li><a href="">十字对开</a></li>
+											<li><a href=""> 三门</a></li>
+											<li><a href="">双门</a></li>
+											<li><a href="">其他</a></li>
+
+										</ol>
+										<ol>
+											<li><a style="color: #FF9900;" href="">【预付定金减500】</a></li>
+											<li><a href="">滚筒</a></li>
+											<li><a href="">洗干一体机</a></li>
+											<li><a href="">波轮</a></li>
+											<li><a href="">大容量</a></li>
+											<li><a href="">变频</a></li>
+
+										</ol>
+										<ol>
+											<li><a style="color: #FF9900;" href="">【冷柜低至649】</a></li>
+											<li><a href="">卧室冷柜</a></li>
+											<li><a href="">立式冷柜</a></li>
+											<li><a href="">水电煤</a></li>
+											<li><a href="">加油卡</a></li>
+											<li><a href="">冰吧</a></li>
+											<li><a href="">厨房操作台</a></li>
+											<li><a href="">美的</a></li>
+										</ol>
+										<ol>
+
+											<li><a style="color: #FF9900;" href="">【家庭影院】</a></li>
+											<li><a href="">回音壁</a></li>
+											<li><a href="">迷你音响</a></li>
+										</ol>
+										<ol>
+
+											<li><a style="color: #FF9900;" href="">【安装服务】</a></li>
+											<li><a href="">清洗服务</a></li>
+											<li><a href="">维修服务</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico ico_kitchen"></i>
+								<a class="cellphone" href="#">厨卫电器</a> / <a href="#">生活家电</a> / <a href="#">厨具</a>
+								<div class="list">
+									<ul>
+										<li><a href="">电器城</a></li>
+										<li><a href="">厨卫家装馆</a></li>
+										<li><a href="">个护健康</a></li>
+										<li><a href="">厨具达人</a></li>
+										<li><a href="">企业采购</a></li>
+										<li><a href="">海外购</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">厨房大店</a></li>
+											<li><a href="">卫浴电器</a></li>
+											<li><a href="">中式厨房</a></li>
+											<li><a href="">西式厨房</a></li>
+											<li><a href="">生活电器</a></li>
+											<li><a href="">个护电器</a></li>
+											<li><a href="">厨具</a></li>
+											<li><a href="">饮水设备</a></li>
+
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">家装节定金80倍翻</a></li>
+											<li><a href="">燃气灶</a></li>
+											<li><a href="">消毒柜</a></li>
+											<li><a href="">洗碗机</a></li>
+											<li><a style="color: #FF9900;" href="">垃圾处理器</a></li>
+											<li><a href="">厨房电器</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">热水器</a></li>
+											<li><a href="">电热水气</a></li>
+											<li><a href="">厨宝</a></li>
+											<li><a href="">浴霸</a></li>
+											<li><a href="">智能马桶盖</a></li>
+											<li><a href="">空气能</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">历史</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">心理学</a></li>
+											<li><a style="color: #FF9900;" href="">哲学/宗教</a></li>
+											<li><a href="">政治/军事</a></li>
+											<li><a href="">法律</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">微波炉</a></li>
+											<li><a href="">电烤箱</a></li>
+											<li><a style="color: #FF9900;" href="">咖啡机</a></li>
+											<li><a href="">空气炸锅</a></li>
+											<li><a href="">食品加工机</a></li>
+											<li><a href="">搅拌机</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">时尚/美妆</a></li>
+											<li><a href="">生活休闲</a></li>
+											<li><a style="color: #FF9900;" href="">健康美食</a></li>
+											<li><a href="">母婴育儿</a></li>
+											<li><a href="">旅游地理</a></li>
+											<li><a href="">财经管理</a></li>
+											<li><a href="">数码/计算机</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【飞利浦超品 满200减199】</a></li>
+											<li>
+												<a style="color: #FF9900;" href="">电吹风</a>
+											</li>
+											<li><a href="">电风扇</a></li>
+											<li><a style="color: #FF9900;" href="">干洗机</a></li>
+											<li><a href="">理发机</a></li>
+											<li><a href="">扫地机器人</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【厨房换新】</a></li>
+											<li><a href="">炒锅</a></li>
+											<li><a href="">压力锅</a></li>
+											<li><a href="">汤锅</a></li>
+											<li><a href="">刀具</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【净水 88元起够】</a></li>
+											<li><a href="">净水器</a></li>
+											<li><a href="">净水机</a></li>
+											<li><a href="">美的</a></li>
+											<li><a href="">砂锅</a></li>
+											<li><a href="">奶锅</a></li>
+											<li>
+												<a style="color: #FF9900;" href="">锅具套装</a>
+											</li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【剃须刀】</a></li>
+											<li>
+												<a style="color: #FF9900;" href="">电饭煲</a>
+											</li>
+											<li><a href="">电动牙刷</a></li>
+											<li><a href="">美容仪</a></li>
+											<li><a href="">进口咖啡机</a></li>
+											<li><a href="">管理</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico ico_computer"></i>
+								<a class="cellphone" href="#">电脑办公</a> / <a href="#">相机</a> / <a href="#">DIY</a>
+								<div class="list">
+									<ul>
+										<li><a href="">电器城</a></li>
+										<li><a href="">电脑频道</a></li>
+										<li><a href="">相机频道</a></li>
+										<li><a href="">以旧换新</a></li>
+										<li><a href="">企业采购</a></li>
+										<li><a href="">海外购电脑</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">电脑壁机</a></li>
+											<li><a href="">平板电脑</a></li>
+											<li><a href="">商用电脑</a></li>
+											<li><a href="">网络设备</a></li>
+											<li><a href="">外设附件</a></li>
+											<li><a href="">摄影影像</a></li>
+											<li><a href="">数码配件</a></li>
+											<li><a href="">DIV硬件</a></li>
+
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a style="color: #FF9900;" href="">【定金翻倍 领500元劵】</a></li>
+											<li><a href="">笔记本</a></li>
+											<li><a href="">游戏本</a></li>
+											<li><a href="">超薄本</a></li>
+											<li><a href="">台式电脑</a></li>
+											<li><a href="">绘本</a></li>
+											<li><a href="">益智游戏</a></li>
+											<li><a href="">玩具书</a></li>
+											<li><a href="">电脑一体机</a></li>
+											<li><a href="">组装电脑</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">iPad</a></li>
+											<li><a style="color: #FF9900;" href="">【华为平板】</a></li>
+											<li><a href="">Kindle</a></li>
+											<li><a href="">二合一</a></li>
+											<li><a href="">微软平板</a></li>
+											<li><a href="">三星平板</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">商用笔记本</a></li>
+											<li><a href="">商务台式机</a></li>
+											<li><a href="">商用显示器</a></li>
+											<li><a href="">服务器</a></li>
+											<li><a href="">工作站</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">路由器</a></li>
+											<li><a href="">无线网卡</a></li>
+											<li><a href="">交换机</a></li>
+											<li><a href="">随声wifi</a></li>
+											<li><a href="">网络储存</a></li>
+											<li><a style="color: #FF9900;" href="">【75元抢百兆路由】</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【抢键盘百元神器】</a></li>
+											<li><a href="">键盘</a></li>
+											<li><a href="">鼠标</a></li>
+											<li><a href="">鼠标套装</a></li>
+											<li><a href="">U盘</a></li>
+											<li><a href="">移动硬盘</a></li>
+											<li><a href="">数码/计算机</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【相机1999元抢】</a></li>
+											<li><a href="">数码相机</a></li>
+											<li><a href="">单反</a></li>
+											<li><a href="">佳能</a></li>
+											<li><a href="">索尼</a></li>
+											<li><a href="">摄像机</a></li>
+											<li><a href="">镜头</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【3c配件8.8元够】</a></li>
+											<li><a href="">储存卡</a></li>
+											<li><a href="">相机包</a></li>
+											<li><a href="">塑身美颜</a></li>
+											<li><a href="">居家休闲</a></li>
+											<li><a href="">性</a></li>
+											<li><a href="">体育运动</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【显示器每满1000减100】</a></li>
+											<li><a href="">显示器</a></li>
+											<li><a href="">CPU</a></li>
+											<li><a href="">IT互联网</a></li>
+											<li><a href="">主板</a></li>
+											<li><a href="">硬盘</a></li>
+											<li><a href="">office办公</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_house ico"></i>
+								<a class="cellphone" href="#">家居</a> / <a href="#">家具 </a> / <a href="#">家装</a>
+								<div class="list">
+									<ul>
+										<li><a href="">居家家纺</a></li>
+										<li><a href="">家居馆</a></li>
+										<li><a href="">建材馆</a></li>
+										<li><a href="">家装馆</a></li>
+										<li><a href="">装修馆</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">家纺</a></li>
+											<li><a href="">家具</a></li>
+											<li><a href="">灯具灯饰</a></li>
+											<li><a href="">厨房卫浴</a></li>
+											<li><a href="">五金建材</a></li>
+											<li><a href="">定制装修</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">凉席</a></li>
+											<li><a href="">毛巾 浴巾</a></li>
+											<li><a href="">床垫</a></li>
+											<li><a href="">毛巾被</a></li>
+											<li><a href="">枕头</a></li>
+											<li><a href="">床品套件</a></li>
+											<li><a href="">窗帘</a></li>
+											<li><a href="">蚊帐</a></li>
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【家装周年庆典满减在用劵】</a></li>
+											<li><a href="">客厅成套家具</a></li>
+											<li><a href="">卧室成套家具</a></li>
+											<li><a href="">儿童成套家具</a></li>
+
+											<li><a href="">衣柜</a></li>
+											<li><a href="">电脑桌</a></li>
+											<li><a href="">安心盈</a></li>
+										</ol>
+										<ol>
+											<li><a href="">客厅灯</a></li>
+											<li><a href="">卧室灯</a></li>
+											<li><a style="color: #FF9900;" href="">【吸顶灯】</a></li>
+											<li><a href="">吊灯</a></li>
+											<li><a href="">台灯</a></li>
+											<li><a href="">集成吊顶</a></li>
+											<li><a href="">其他</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">花洒</a></li>
+											<li><a href="">水槽</a></li>
+											<li><a href="">马桶</a></li>
+											<li><a href="">坐便器盖板</a></li>
+											<li><a href="">龙头</a></li>
+											<li><a href="">地漏</a></li>
+											<li><a href="">浴室柜</a></li>
+											<li><a href="">浴缸</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">开关</a></li>
+											<li><a style="color: #FF9900;" href="">【插座】</a></li>
+											<li><a href="">监控器材</a></li>
+											<li><a href="">电站</a></li>
+											<li><a href="">电线</a></li>
+											<li><a href="">家具五金</a></li>
+											<li><a href="">手动五金</a></li>
+											<li><a href="">工具箱</a></li>
+											<li><a href="">电线</a></li>
+
+										</ol>
+										<ol>
+
+											<li><a href="">整体衣柜</a></li>
+											<li><a href="">定制电视柜</a></li>
+											<li><a href="">木门</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_food ico"></i>
+								<a class="cellphone" href="#">食品 </a> / <a href="#">酒水 </a> / <a href="#">生鲜</a> / <a href="#">特产</a>
+								<div class="list">
+									<ul>
+										<li><a href="">苏宁超市</a></li>
+										<li><a href="">食品粮油</a></li>
+										<li><a href="">酒水冲调</a></li>
+										<li><a href="">苏鲜生</a></li>
+										<li><a href="">中华特色馆</a></li>
+										<li><a href="">医药馆</a></li>
+										<li><a href="">企业采购</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">饮料冲乳</a></li>
+											<li><a href="">进口食品</a></li>
+											<li><a href="">生鲜食品</a></li>
+											<li><a href="">中外名酒</a></li>
+											<li><a href="">休闲食品</a></li>
+											<li><a href="">粮味调品</a></li>
+											<li><a href="">营养保健</a></li>
+											<li><a href="">中华特色馆</a></li>
+
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a style="color: #FF9900;" href="">【纯牛奶】</a></li>
+											<li><a href="">碳酸饮料</a></li>
+											<li><a href="">果蔬汁</a></li>
+											<li><a href="">功能饮料</a></li>
+											<li><a href="">饮用水</a></li>
+											<li><a href="">含乳饮料</a></li>
+											<li><a style="color: #FF9900;" href="">【酸奶】</a></li>
+											<li><a href="">风味奶</a></li>
+											<li><a href="">成人奶片</a></li>
+											<li><a href="">麦片</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">进口牛奶</a></li>
+											<li><a href="">进口休闲食品</a></li>
+											<li><a href="">进口饼干食品</a></li>
+											<li><a href="">进口方便面</a></li>
+											<li><a href="">进口饮料理</a></li>
+											<li><a href="">进口粮油</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a style="color: #FF9900;" href="">【水果】</a></li>
+
+											<li><a href="">肉类</a></li>
+											<li><a href="">蛋类</a></li>
+											<li><a href="">素食</a></li>
+											<li><a href="">鲜花</a></li>
+											<li><a href="">蔬菜</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">【白酒】</a></li>
+											<li><a href="">啤酒</a></li>
+											<li><a href="">黄酒</a></li>
+											<li><a href="">养生酒</a></li>
+											<li><a href="">洋酒</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">月饼</a></li>
+											<li><a href="">坚果</a></li>
+											<li><a href="">糖果</a></li>
+											<li><a href="">口香糖</a></li>
+											<li><a href="">糕点点心</a></li>
+											<li><a href="">卤味小吃</a></li>
+											<li><a href="">巧克力</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">食用油</a></li>
+											<li><a href="">大米</a></li>
+											<li><a href="">杂粮</a></li>
+											<li><a href="">南北干货</a></li>
+											<li><a href="">大枣</a></li>
+											<li><a href="">厨房调料</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">维生素</a></li>
+											<li><a href="">减肥瘦身</a></li>
+											<li><a href="">提高免疫</a></li>
+											<li><a href="">美容养颜</a></li>
+											<li><a href="">调节三高</a></li>
+											<li><a href="">补肾强身</a></li>
+											<li><a href="">体育运动</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">特色大米</a></li>
+											<li><a href="">杂粮</a></li>
+											<li><a href="">美酒</a></li>
+											<li><a href="">大枣</a></li>
+											<li><a href="">黑木耳</a></li>
+											<li><a href="">枸杞</a></li>
+											<li><a href="">零食</a></li>
+										</ol>
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_make_up ico"></i>
+								<a class="cellphone" href="#">个护化妆 </a> / <a href="#">纸品清洁 </a> / <a href="#">宠物</a>
+								<div class="list">
+									<ul>
+										<li><a href="">苏宁超市</a></li>
+										<li><a href="">美妆个护</a></li>
+										<li><a href="">医药馆</a></li>
+										<li><a href="">海外购188-100</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">面部护肤</a></li>
+											<li><a href="">口腔护理</a></li>
+											<li><a href="">洗发护发</a></li>
+											<li><a href="">身体护理</a></li>
+											<li><a href="">彩妆香风</a></li>
+											<li><a href="">女性护理</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">护肤套装</a></li>
+											<li><a href="">眼部护理</a></li>
+											<li><a href="">颈部护发</a></li>
+											<li><a style="color: #FF9900;" href="">面膜</a></li>
+											<li><a href="">苏宁卡</a></li>
+											<li><a href="">企业贷款</a></li>
+											<li><a href="">财富资讯</a></li>
+											<li><a href="">苏宁金融APP下载</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">牙刷</a></li>
+											<li><a href="">口腔套装</a></li>
+											<li><a href="">儿童牙膏</a></li>
+											<li><a href="">苏宁卡</a></li>
+
+											<li><a href="">基金</a></li>
+											<li><a href="">活动专区</a></li>
+											<li><a href="">安心盈</a></li>
+										</ol>
+										<ol>
+											<li><a href="">科技</a></li>
+											<li><a href="">设计</a></li>
+											<li><a href="">公益</a></li>
+											<li><a href="">农业</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">娱乐</a></li>
+											<li><a href="">其他</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">旅行险</a></li>
+											<li><a href="">意外险</a></li>
+											<li><a href="">健康险</a></li>
+											<li><a href="">财产险</a></li>
+											<li><a href="">延保</a></li>
+											<li><a href="">寿险</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">手机充值</a></li>
+											<li><a href="">还款</a></li>
+											<li><a href="">转账</a></li>
+											<li><a href="">水电煤</a></li>
+											<li><a href="">加油卡</a></li>
+											<li><a href="">固话宽带</a></li>
+											<li><a href="">有线电视</a></li>
+											<li><a href="">校园一卡通</a></li>
+										</ol>
+										<ol>
+
+											<li><a href="">火车票</a></li>
+											<li><a href="">企业差旅</a></li>
+											<li><a href="">机票</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_baby ico"></i>
+								<a class="cellphone" href="#">母婴 </a> / <a href="#">玩具 </a> / <a href="#">车床 </a> / <a href="#">童装</a>
+								<div class="list">
+									<ul>
+										<li><a href="">车床座椅</a></li>
+										<li><a href="">儿童玩具</a></li>
+										<li><a href="">奶粉辅食</a></li>
+										<li><a href="">孕产/摄影</a></li>
+										<li><a href="">海外购</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">奶粉</a></li>
+											<li><a href="">尿裤湿巾</a></li>
+											<li><a href="">营养辅助</a></li>
+											<li><a href="">音像</a></li>
+											<li><a href="">期刊杂物</a></li>
+											<li><a href="">经管励志</a></li>
+											<li><a href="">健康生活</a></li>
+											<li><a href="">教育科技</a></li>
+
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">0-2岁</a></li>
+											<li><a href="">3-6岁</a></li>
+											<li><a href="">7-10岁</a></li>
+											<li><a href="">10-14岁</a></li>
+											<li><a href="">幼儿启蒙</a></li>
+											<li><a href="">绘本</a></li>
+											<li><a href="">益智游戏</a></li>
+											<li><a href="">玩具书</a></li>
+											<li><a href="">中国儿童文学</a></li>
+											<li><a href="">外国儿童文学</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">名人传记</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">爱情/情感</a></li>
+											<li><a href="">悬疑/推理</a></li>
+											<li><a href="">言情</a></li>
+											<li><a href="">动漫</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">历史</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">心理学</a></li>
+											<li><a href="">哲学/宗教</a></li>
+											<li><a href="">政治/军事</a></li>
+											<li><a href="">法律</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">华语流行</a></li>
+											<li><a href="">欧美流行</a></li>
+											<li><a href="">欧美摇滚</a></li>
+											<li><a href="">日韩流行</a></li>
+											<li><a href="">古典音乐</a></li>
+											<li><a href="">儿童教育</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">时尚/美妆</a></li>
+											<li><a href="">生活休闲</a></li>
+											<li><a href="">健康美食</a></li>
+											<li><a href="">母婴育儿</a></li>
+											<li><a href="">旅游地理</a></li>
+											<li><a href="">财经管理</a></li>
+											<li><a href="">数码/计算机</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">经济</a></li>
+											<li><a href="">金融</a></li>
+											<li><a href="">创业</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">市场营销</a></li>
+											<li><a href="">励志与成功</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">旅游</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">塑身美颜</a></li>
+											<li><a href="">居家休闲</a></li>
+											<li><a href="">性</a></li>
+											<li><a href="">体育运动</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">中小学教辅</a></li>
+											<li><a href="">外语</a></li>
+											<li><a href="">工具书</a></li>
+											<li><a href="">IT互联网</a></li>
+											<li><a href="">医学</a></li>
+											<li><a href="">建筑</a></li>
+											<li><a href="">office办公</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">美丽装扮</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">励志成功</a></li>
+											<li><a href="">管理</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_exercise ico"></i>
+								<a class="cellphone" href="#">运动</a> / <a href="#">户外</a> / <a href="#">足球</a> / <a href="#">骑行</a>
+								<div class="list">
+									<ul>
+										<li><a href="">运动馆</a></li>
+										<li><a href="">服装城</a></li>
+										<li><a href="">苏宁特卖</a></li>
+										<li><a href="">钟表馆</a></li>
+										<li><a href="">皮具箱包</a></li>
+										<li><a href="">珠宝馆</a></li>
+										<li><a href="">海外购鞋</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">奶粉</a></li>
+											<li><a href="">尿裤湿巾</a></li>
+											<li><a href="">营养辅助</a></li>
+											<li><a href="">音像</a></li>
+											<li><a href="">期刊杂物</a></li>
+											<li><a href="">经管励志</a></li>
+											<li><a href="">健康生活</a></li>
+											<li><a href="">教育科技</a></li>
+
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">0-2岁</a></li>
+											<li><a href="">3-6岁</a></li>
+											<li><a href="">7-10岁</a></li>
+											<li><a href="">10-14岁</a></li>
+											<li><a href="">幼儿启蒙</a></li>
+											<li><a href="">绘本</a></li>
+											<li><a href="">益智游戏</a></li>
+											<li><a href="">玩具书</a></li>
+											<li><a href="">中国儿童文学</a></li>
+											<li><a href="">外国儿童文学</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">名人传记</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">爱情/情感</a></li>
+											<li><a href="">悬疑/推理</a></li>
+											<li><a href="">言情</a></li>
+											<li><a href="">动漫</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">历史</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">心理学</a></li>
+											<li><a href="">哲学/宗教</a></li>
+											<li><a href="">政治/军事</a></li>
+											<li><a href="">法律</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">华语流行</a></li>
+											<li><a href="">欧美流行</a></li>
+											<li><a href="">欧美摇滚</a></li>
+											<li><a href="">日韩流行</a></li>
+											<li><a href="">古典音乐</a></li>
+											<li><a href="">儿童教育</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">时尚/美妆</a></li>
+											<li><a href="">生活休闲</a></li>
+											<li><a href="">健康美食</a></li>
+											<li><a href="">母婴育儿</a></li>
+											<li><a href="">旅游地理</a></li>
+											<li><a href="">财经管理</a></li>
+											<li><a href="">数码/计算机</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">经济</a></li>
+											<li><a href="">金融</a></li>
+											<li><a href="">创业</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">市场营销</a></li>
+											<li><a href="">励志与成功</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">旅游</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">塑身美颜</a></li>
+											<li><a href="">居家休闲</a></li>
+											<li><a href="">性</a></li>
+											<li><a href="">体育运动</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">中小学教辅</a></li>
+											<li><a href="">外语</a></li>
+											<li><a href="">工具书</a></li>
+											<li><a href="">IT互联网</a></li>
+											<li><a href="">医学</a></li>
+											<li><a href="">建筑</a></li>
+											<li><a href="">office办公</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">美丽装扮</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">励志成功</a></li>
+											<li><a href="">管理</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_clothing ico"></i>
+								<a class="cellphone" href="#">男装</a> / <a href="#">女装</a> / <a href="#">内衣</a>
+								<div class="list">
+									<ul>
+										<li><a href="">服装城</a></li>
+										<li><a href="">德升时装</a></li>
+										<li><a href="">苏宁特卖</a></li>
+										<li><a href="">皮具箱包</a></li>
+										<li><a href="">珠宝箱</a></li>
+										<li><a href="">运动馆</a></li>
+										<li><a href="">钟表馆</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">苏宁金融</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">众筹</a></li>
+											<li><a href="">保险</a></li>
+											<li><a href="">易付宝</a></li>
+											<li><a href="">旅行</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">众筹</a></li>
+											<li><a href="">保险</a></li>
+											<li><a href="">消费贷款</a></li>
+											<li><a href="">苏宁卡</a></li>
+											<li><a href="">企业贷款</a></li>
+											<li><a href="">财富资讯</a></li>
+											<li><a href="">苏宁金融APP下载</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">苏宁零钱宝</a></li>
+											<li><a href="">我的理财</a></li>
+											<li><a href="">票据理财</a></li>
+											<li><a href="">苏宁卡</a></li>
+											<li><a href="">基金</a></li>
+											<li><a href="">活动专区</a></li>
+											<li><a href="">安心盈</a></li>
+										</ol>
+										<ol>
+											<li><a href="">科技</a></li>
+											<li><a href="">设计</a></li>
+											<li><a href="">公益</a></li>
+											<li><a href="">农业</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">娱乐</a></li>
+											<li><a href="">其他</a></li>
+										</ol>
+										<ol>
+											<li><a href="">旅行险</a></li>
+											<li><a href="">意外险</a></li>
+											<li><a href="">健康险</a></li>
+											<li><a href="">财产险</a></li>
+											<li><a href="">延保</a></li>
+											<li><a href="">寿险</a></li>
+										</ol>
+										<ol>
+											<li><a href="">手机充值</a></li>
+											<li><a href="">还款</a></li>
+											<li><a href="">转账</a></li>
+											<li><a href="">水电煤</a></li>
+											<li><a href="">加油卡</a></li>
+											<li><a href="">固话宽带</a></li>
+											<li><a href="">有线电视</a></li>
+											<li><a href="">校园一卡通</a></li>
+										</ol>
+										<ol>
+											<li><a href="">火车票</a></li>
+											<li><a href="">企业差旅</a></li>
+											<li><a href="">机票</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_shoe ico"></i>
+								<a class="cellphone" href="#">鞋靴</a> / <a href="#">箱包</a> / <a href="#">钟表</a> / <a href="#">珠宝</a>
+								<div class="list">
+									<ul>
+										<li><a href="">皮具箱包</a></li>
+										<li><a href="">钟表馆</a></li>
+										<li><a href="">苏宁特卖</a></li>
+										<li><a href="">服装城</a></li>
+										<li><a href="">运动馆</a></li>
+										<li><a href="">海外购手表</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">少儿频道</a></li>
+											<li><a href="">文学艺术</a></li>
+											<li><a href="">人文社科</a></li>
+											<li><a href="">音像</a></li>
+											<li><a href="">期刊杂物</a></li>
+											<li><a href="">经管励志</a></li>
+											<li><a href="">健康生活</a></li>
+											<li><a href="">教育科技</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">0-2岁</a></li>
+											<li><a href="">3-6岁</a></li>
+											<li><a href="">7-10岁</a></li>
+											<li><a href="">10-14岁</a></li>
+											<li><a href="">幼儿启蒙</a></li>
+											<li><a href="">绘本</a></li>
+											<li><a href="">益智游戏</a></li>
+											<li><a href="">玩具书</a></li>
+											<li><a href="">中国儿童文学</a></li>
+											<li><a href="">外国儿童文学</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">名人传记</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">爱情/情感</a></li>
+											<li><a href="">悬疑/推理</a></li>
+											<li><a href="">言情</a></li>
+											<li><a href="">动漫</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">历史</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">心理学</a></li>
+											<li><a href="">哲学/宗教</a></li>
+											<li><a href="">政治/军事</a></li>
+											<li><a href="">法律</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">华语流行</a></li>
+											<li><a href="">欧美流行</a></li>
+											<li><a href="">欧美摇滚</a></li>
+											<li><a href="">日韩流行</a></li>
+											<li><a href="">古典音乐</a></li>
+											<li><a href="">儿童教育</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">时尚/美妆</a></li>
+											<li><a href="">生活休闲</a></li>
+											<li><a href="">健康美食</a></li>
+											<li><a href="">母婴育儿</a></li>
+											<li><a href="">旅游地理</a></li>
+											<li><a href="">财经管理</a></li>
+											<li><a href="">数码/计算机</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">经济</a></li>
+											<li><a href="">金融</a></li>
+											<li><a href="">创业</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">市场营销</a></li>
+											<li><a href="">励志与成功</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">旅游</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">塑身美颜</a></li>
+											<li><a href="">居家休闲</a></li>
+											<li><a href="">性</a></li>
+											<li><a href="">体育运动</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">中小学教辅</a></li>
+											<li><a href="">外语</a></li>
+											<li><a href="">工具书</a></li>
+											<li><a href="">IT互联网</a></li>
+											<li><a href="">医学</a></li>
+											<li><a href="">建筑</a></li>
+											<li><a href="">office办公</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">美丽装扮</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">励志成功</a></li>
+											<li><a href="">管理</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_automobile ico"></i>
+								<a class="cellphone" href="#">汽车</a> / <a href="#">汽车用品</a>
+								<div class="list">
+									<ul>
+										<li><a href="">汽车超市</a></li>
+										<li><a href="">轮胎</a></li>
+										<li><a href="">车饰馆</a></li>
+										<li><a href="">平安车管家</a></li>
+										<li><a href="">电动车</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">苏宁金融</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">众筹</a></li>
+											<li><a href="">保险</a></li>
+											<li><a href="">易付宝</a></li>
+											<li><a href="">旅行</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">众筹</a></li>
+											<li><a href="">保险</a></li>
+											<li><a href="">消费贷款</a></li>
+											<li><a href="">苏宁卡</a></li>
+											<li><a href="">企业贷款</a></li>
+											<li><a href="">财富资讯</a></li>
+											<li><a href="">苏宁金融APP下载</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">苏宁零钱宝</a></li>
+											<li><a href="">我的理财</a></li>
+											<li><a href="">票据理财</a></li>
+											<li><a href="">苏宁卡</a></li>
+											<li><a href="">基金</a></li>
+											<li><a href="">活动专区</a></li>
+											<li><a href="">安心盈</a></li>
+										</ol>
+										<ol>
+											<li><a href="">科技</a></li>
+											<li><a href="">设计</a></li>
+											<li><a href="">公益</a></li>
+											<li><a href="">农业</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">娱乐</a></li>
+											<li><a href="">其他</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">旅行险</a></li>
+											<li><a href="">意外险</a></li>
+											<li><a href="">健康险</a></li>
+											<li><a href="">财产险</a></li>
+											<li><a href="">延保</a></li>
+											<li><a href="">寿险</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">手机充值</a></li>
+											<li><a href="">还款</a></li>
+											<li><a href="">转账</a></li>
+											<li><a href="">水电煤</a></li>
+											<li><a href="">加油卡</a></li>
+											<li><a href="">固话宽带</a></li>
+											<li><a href="">有线电视</a></li>
+											<li><a href="">校园一卡通</a></li>
+										</ol>
+										<ol>
+
+											<li><a href="">火车票</a></li>
+											<li><a href="">企业差旅</a></li>
+											<li><a href="">机票</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="ico_book ico"></i>
+								<a class="cellphone" href="#">图书</a> / <a href="#">童书</a> / <a href="#">电子书</a>
+								<div class="list">
+									<ul>
+										<li><a href="">图书频道</a></li>
+										<li><a href="">当当网</a></li>
+										<li><a href="">少儿图书</a></li>
+										<li><a href="">电子书</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">少儿频道</a></li>
+											<li><a href="">文学艺术</a></li>
+											<li><a href="">人文社科</a></li>
+											<li><a href="">音像</a></li>
+											<li><a href="">期刊杂物</a></li>
+											<li><a href="">经管励志</a></li>
+											<li><a href="">健康生活</a></li>
+											<li><a href="">教育科技</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">0-2岁</a></li>
+											<li><a href="">3-6岁</a></li>
+											<li><a href="">7-10岁</a></li>
+											<li><a href="">10-14岁</a></li>
+											<li><a href="">幼儿启蒙</a></li>
+											<li><a href="">绘本</a></li>
+											<li><a href="">益智游戏</a></li>
+											<li><a href="">玩具书</a></li>
+											<li><a href="">中国儿童文学</a></li>
+											<li><a href="">外国儿童文学</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">名人传记</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">爱情/情感</a></li>
+											<li><a href="">悬疑/推理</a></li>
+											<li><a href="">言情</a></li>
+											<li><a href="">动漫</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">历史</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">心理学</a></li>
+											<li><a href="">哲学/宗教</a></li>
+											<li><a href="">政治/军事</a></li>
+											<li><a href="">法律</a></li>
+
+										</ol>
+
+										<ol>
+											<li><a href="">华语流行</a></li>
+											<li><a href="">欧美流行</a></li>
+											<li><a href="">欧美摇滚</a></li>
+											<li><a href="">日韩流行</a></li>
+											<li><a href="">古典音乐</a></li>
+											<li><a href="">儿童教育</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">时尚/美妆</a></li>
+											<li><a href="">生活休闲</a></li>
+											<li><a href="">健康美食</a></li>
+											<li><a href="">母婴育儿</a></li>
+											<li><a href="">旅游地理</a></li>
+											<li><a href="">财经管理</a></li>
+											<li><a href="">数码/计算机</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">经济</a></li>
+											<li><a href="">金融</a></li>
+											<li><a href="">创业</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">市场营销</a></li>
+											<li><a href="">励志与成功</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">旅游</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">塑身美颜</a></li>
+											<li><a href="">居家休闲</a></li>
+											<li><a href="">性</a></li>
+											<li><a href="">体育运动</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">中小学教辅</a></li>
+											<li><a href="">外语</a></li>
+											<li><a href="">工具书</a></li>
+											<li><a href="">IT互联网</a></li>
+											<li><a href="">医学</a></li>
+											<li><a href="">建筑</a></li>
+											<li><a href="">office办公</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">小说</a></li>
+											<li><a href="">青春文学</a></li>
+											<li><a href="">孕产育儿</a></li>
+											<li><a href="">美丽装扮</a></li>
+											<li><a href="">美食</a></li>
+											<li><a href="">励志成功</a></li>
+											<li><a href="">管理</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li class="last">
+								<i class="ico_money ico"></i>
+								<a class="cellphone" href="#">理财</a> / <a href="#">众筹</a> / <a href="#">分期</a> / <a href="#">保险</a>
+								<div class="list">
+									<ul>
+										<li><a href="">理财</a></li>
+										<li><a href="">众筹</a></li>
+										<li><a href="">分期</a></li>
+										<li><a href="">保险</a></li>
+									</ul>
+									<div class="list_tittle">
+										<ul>
+											<li><a href="">苏宁金融</a></li>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">众筹</a></li>
+											<li><a href="">保险</a></li>
+											<li><a href="">易付宝</a></li>
+											<li><a href="">旅行</a></li>
+										</ul>
+									</div>
+									<div class="list_content">
+										<ol>
+											<li><a href="">投资理财</a></li>
+											<li><a href="">众筹</a></li>
+											<li><a href="">保险</a></li>
+											<li><a href="">消费贷款</a></li>
+											<li><a href="">苏宁卡</a></li>
+											<li><a href="">企业贷款</a></li>
+											<li><a href="">财富资讯</a></li>
+											<li><a href="">苏宁金融APP下载</a></li>
+										</ol>
+
+										<ol>
+											<li><a href="">苏宁零钱宝</a></li>
+											<li><a href="">我的理财</a></li>
+											<li><a href="">票据理财</a></li>
+											<li><a href="">苏宁卡</a></li>
+
+											<li><a href="">基金</a></li>
+											<li><a href="">活动专区</a></li>
+											<li><a href="">安心盈</a></li>
+										</ol>
+										<ol>
+											<li><a href="">科技</a></li>
+											<li><a href="">设计</a></li>
+											<li><a href="">公益</a></li>
+											<li><a href="">农业</a></li>
+											<li><a href="">文化</a></li>
+											<li><a href="">娱乐</a></li>
+											<li><a href="">其他</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">旅行险</a></li>
+											<li><a href="">意外险</a></li>
+											<li><a href="">健康险</a></li>
+											<li><a href="">财产险</a></li>
+											<li><a href="">延保</a></li>
+											<li><a href="">寿险</a></li>
+
+										</ol>
+										<ol>
+											<li><a href="">手机充值</a></li>
+											<li><a href="">还款</a></li>
+											<li><a href="">转账</a></li>
+											<li><a href="">水电煤</a></li>
+											<li><a href="">加油卡</a></li>
+											<li><a href="">固话宽带</a></li>
+											<li><a href="">有线电视</a></li>
+											<li><a href="">校园一卡通</a></li>
+										</ol>
+										<ol>
+
+											<li><a href="">火车票</a></li>
+											<li><a href="">企业差旅</a></li>
+											<li><a href="">机票</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="middle_lunbo">
+						<div class="carousel" id="carousel">
+							<div class="btns">
+								<a class="leftBtn" id="leftBtn"></a>
+								<a class="rightBtn" id="rightBtn"></a>
+							</div>
+							<div class="imageslist" id="imageslist">
+								<ul>
+									<li class="first">
+										<a><img src="img/banner01.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a><img src="img/banner02.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a><img src="img/banner03.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a><img src="img/banner04.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a><img src="img/banner05.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+							<div class="circles" id="circles">
+								<ol>
+									<li class="cur"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ol>
+							</div>
+						</div>
+						<div class="lunbo_pic">
+							<div class="lunbo_pic_1">
+								<p class="pic1name">母婴嬉水节</p>
+								<p class="pic1name1">大牌满99减20</p>
+								<img src="img/149967204587169103.png" class="lunbo_pic1" />
+							</div>
+
+							<div class="lunbo_pic_2">
+								<p class="pic1name">智能格调生活</p>
+								<p class="pic1name1">智能居家99元抢</p>
+								<img src="img/149984820565932048.png" class="lunbo_pic2" />
+							</div>
+						</div>
+
+					</div>
+
+					<div class="middle_right">
+						<div class="user">
+							<div class="user_img"></div>
+							<p>Hi,你好</p>
+							<div class="btn">
+								<div class="denglu login_name">
+									<a href="web/login.html">登录</a>
+								</div>
+								<div class="zhuce">
+									新人有礼
+								</div>
+							</div>
+							<div class="gift">
+								<div class="zuan">
+									<span></span> 领云钻 >
+								</div>
+								<div class="quan">
+									<span></span> 领券>
+								</div>
+							</div>
+						</div>
+
+						<div class="toutiao">
+							<p class="toutiao1"><span>[生活] </span> WHAT?这些水果比红牛还提神？</p>
+							<p class="toutiao2"><span>[必看] </span> 别人家的碗碟干净又整齐，就你家的丑的清奇！</p>
+						</div>
+
+						<div class="shenghuo">
+							<div class="shenghuo_pic c1"></div>
+							<div class="shenghuo_pic c2"></div>
+							<div class="shenghuo_pic c3"></div>
+							<div class="shenghuo_pic c4"></div>
+							<div class="shenghuo_pic c5"></div>
+							<div class="shenghuo_pic c6"></div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!--底部商品栏-->
+			<div class="commodity">
+				<div class="commodity_in">
+					<div class="all">
+						<main>
+							<p><img src="img/149437870492672846.jpg" /></p>
+							<ul id="hot-goods"></ul>
+						</main>
+					</div>
+
+					<!--<div class="house">
+						<p>家居</p>
+						<ul id="house"></ul>
+					</div>
+
+					<div class="furniture">
+						<p>家具</p>
+						<ul id="furniture"></ul>
+					</div>
+
+					<div class="stationery">
+						<p>文具</p>
+						<ul id="stationery"></ul>
+					</div>
+
+					<div class="digital">
+						<p>数码</p>
+						<ul id="digital"></ul>
+					</div>
+
+					<div class="play">
+						<p>玩乐</p>
+						<ul id="play"></ul>
+					</div>
+
+					<div class="kitchen">
+						<p>厨卫</p>
+						<ul id="kitchen"></ul>
+					</div>
+
+					<div class="food">
+						<p>美食</p>
+						<ul id="food"></ul>
+					</div>
+
+					<div class="men">
+						<p>男装</p>
+						<ul id="men"></ul>
+					</div>
+
+					<div class="women">
+						<p>女装</p>
+						<ul id="women"></ul>
+					</div>
+
+					<div class="children">
+						<p>童装</p>
+						<ul id="children"></ul>
+					</div>-->
+
+				</div>
+			</div>
+			<div class="end">
+				<div>
+					<p class="line-left"></p>
+					<span>END</span>
+					<p class="line-right"></p>
+				</div>
+			</div>
+			<!--底部-->
+			<div class="ng_bottom">
+				<div class="ng_bottom_frame">
+					<div class="ng-promise">
+						<ul>
+							<li>
+								<img src="img/149386338830969041.jpg" />
+								<strong>正品保障</strong>
+								<p>正品保障、提供发票</p>
+							</li>
+							<li>
+								<img src="img/149386339441846551.jpg" />
+								<strong>急速物流</strong>
+								<p>如约送货、送货入户</p>
+							</li>
+							<li>
+								<img src="img/149386340040069121.jpg" />
+								<strong>售后无忧</strong>
+								<p>退换无忧、维修无忧</p>
+							</li>
+							<li>
+								<img src="img/149386340760421563.jpg" />
+								<strong>特色服务</strong>
+								<p>私人订制家电套餐</p>
+							</li>
+							<li>
+								<img src="img/149386341371637387.jpg" />
+								<strong>帮助中心</strong>
+								<p>您的购物指南</p>
+							</li>
+						</ul>
+					</div>
+					<div class="ng-help-box">
+						<dl>
+							<dt>购物指南</dt>
+							<dd>导购演示</dd>
+							<dd>免费注册</dd>
+							<dd>会员等级</dd>
+							<dd>常见问题</dd>
+							<dd>品牌大全</dd>
+						</dl>
+						<dl>
+							<dt>支付方式</dt>
+							<dd>苏宁支付</dd>
+							<dd>网银支付</dd>
+							<dd>快捷支付</dd>
+							<dd>分期付款</dd>
+							<dd>货到付款</dd>
+							<dd>任性付支付</dd>
+						</dl>
+						<dl>
+							<dt>物流配送</dt>
+							<dd>免运费政策</dd>
+							<dd>配送服务承诺</dd>
+							<dd>签收验货</dd>
+							<dd>物流查询</dd>
+						</dl>
+						<dl>
+							<dt>售后服务</dt>
+							<dd>退换货政策</dd>
+							<dd>退换货流程</dd>
+							<dd>购买延保服务</dd>
+							<dd>退款说明</dd>
+							<dd>退换货申请</dd>
+							<dd>维修/保养</dd>
+						</dl>
+						<dl>
+							<dt>商家服务</dt>
+							<dd>商家入驻</dd>
+							<dd>培训中心</dd>
+							<dd>广告服务</dd>
+							<dd>商家帮助</dd>
+							<dd>服务市场</dd>
+							<dd>规则中心</dd>
+						</dl>
+						<dl>
+							<dt>身边苏宁</dt>
+							<dd>全国300个城市
+								<br />1600家门店
+								<br />3000个服务点
+								<br />为您提供最贴心的
+								<br />服务！</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--脚页-->
+			<footer>
+				<div class="frame">
+					<p class="black">
+						<a href="#">苏宁控股</a>
+						<span>|</span>
+						<a href="#">苏宁云商</a>
+						<span>|</span>
+						<a href="#">苏宁互联</a>
+						<span>|</span>
+						<a href="#">苏宁金融</a>
+						<span>|</span>
+						<a href="#">苏宁支付</a>
+						<span>|</span>
+						<a href="#">PPTV</a>
+						<span>|</span>
+						<a href="#">红孩子</a>
+						<span>|</span>
+						<a href="#">苏宁物流</a>
+						<span>|</span>
+						<a href="#">手机苏宁</a>
+						<span>|</span>
+						<a href="#">苏宁酒店</a>
+						<span>|</span>
+						<a href="#">知识产权举报</a>
+					</p>
+					<p class="black">
+						<a href="#">联系我们</a>
+						<span>|</span>
+						<a href="#">招聘英才</a>
+						<span>|</span>
+						<a href="#">供应商入驻</a>
+						<span>|</span>
+						<a href="#">广告平台</a>
+						<span>|</span>
+						<a href="#">苏宁联盟</a>
+						<span>|</span>
+						<a href="#">苏宁招标</a>
+						<span>|</span>
+						<a href="#">友情链接</a>
+						<span>|</span>
+						<a href="#">法律申明</a>
+						<span>|</span>
+						<a href="#">用户体验提升计划</a>
+						<span>|</span>
+						<a href="#">股东会员认证</a>
+					</p>
+					<p class="gray">
+						<span>Copyright© 2002-2017 ，苏宁云商集团股份有限公司版权所有</span>
+						<a href="#">苏ICP备10207551号-4</a>
+						<span>|</span>
+						<a href="#">苏B1-20130131</a>
+						<span>|</span>
+						<a href="#">苏B2-20130376</a>
+					</p>
+					<p class="gray">
+						<a href="#">苏B2-20130391</a>
+						<span>出版物经营许可证新出发苏批字第A-243号</span>
+						<span>|</span>
+						<span>互联网药品信息服务资格证书</span>
+						<a href="#">（苏）-非经营性-2016-0005</a>
+					</p>
+					<p class="gray">
+						<span>本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</span>
+					</p>
+					<div class="bottom">
+						<a href="#"><img src="img/chengxin.png" /></a>
+						<a href="#"><img src="img/unicom.png" /></a>
+						<a href="#"><img src="img/dianxin.jpg" /></a>
+						<a href="#"><img src="img/dianzi.png" /></a>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<script src="js/myajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/animate.js" charset="utf-8"></script>
+		<script src="js/tittle.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/aside.js" type="text/javascript" charset="utf-8"></script>
+
+		<script>
+			var cat_id = getQueryString('cat_id');
+			var oGoods = document.querySelector('#hot-goods');
+			myajax.get('http://h6.duchengjiu.top/shop/api_goods.php', {
+				cat_id: cat_id,
+				pagesize: 100
+			}, (err, responseText) => {
+				var json = JSON.parse(responseText);
+				var data = json.data;
+				//判断如果没有数据，则显示空的提示
+				if (data.length === 0) {
+					oGoods.innerHTML = "<center>后端程序员跑路了</center>";
+					return;
+				}
+				for (var i = 0; i < data.length; i++) {
+					var obj = data[i];
+					oGoods.innerHTML += `<li class="goods">
+					<a href="web/goods.html?goods_id=${obj.goods_id}">
+			          <div><img src="${obj.goods_thumb}" /></div>
+			          <div><p>${obj.goods_name}</p></div>
+			          <div><p class="price">￥${obj.price}</p></div>
+			          </a>
+			        </li>`;
+							}
+			});
+			
+			
+
+			
+			//顶部导航
+			var ozhuce = document.getElementsByClassName("zhuce")[0];
+			var oLogout = document.getElementById("loginout");
+			var oUsername = document.querySelectorAll(".login_name");
+			oLogout.style.display = "none";
+//			console.log(oUsername)
+			for (var i = 0; i < oUsername.length; i++) {
+//				console.log(oUsername[i].innerHTML);
+				if (localStorage.username) {
+					oUsername[i].innerHTML = localStorage.username;
+					ozhuce.style.display = "none";
+					oLogout.style.display = "block";
+				}
+			}
+
+			function tiao() {
+					if (!localStorage.username) {
+						location.href = "web/login.html";
+					}
+				}
+			
+			
+				//得到carousel
+			var carousel = document.getElementById("carousel");
+			 //得到li
+			var lis = document.getElementById("imageslist").getElementsByTagName("li");
+			 //得到按钮
+			var leftBtn = document.getElementById("leftBtn");
+			var rightBtn = document.getElementById("rightBtn");
+			 //得到小圆点
+			var circlesLi = document.getElementById("circles").getElementsByTagName("li");
+			var middle = document.getElementsByClassName("middle")[0];
+			 //定义背景颜色数组
+			var ocolor = ["#AA212B", "#F74231", "#EFD7B3", "#0983F0", "#E91F59"];
+			 //图片数量
+			var imgLength = lis.length;
+			 //图片宽度
+			var width = 560;
+			 //滚动速度
+			var animatetime = 300;
+			 //缓冲描述
+			var tween = "Linear";
+			 //间隔时间
+			var interval = 4000;
+			var idx = 0;
+			 //自动轮播
+			var timer = setInterval(rightBtnHandler, interval);
+			 //鼠标进入停止
+			carousel.onmouseover = function() {
+					clearInterval(timer);
+				}
+				//鼠标离开开始
+			carousel.onmouseout = function() {
+					timer = setInterval(rightBtnHandler, interval);
+				}
+				//右按钮的监听
+			rightBtn.onclick = rightBtnHandler;
+
+			function rightBtnHandler() {
+					//函数截流
+					if (lis[idx].isanimated) return;
+					//原来的信号量的图片淡出
+					animate(lis[idx], {
+						"opacity": 0
+					}, 200);
+					//信号量改变
+					idx++;
+					if (idx > imgLength - 1) {
+						idx = 0;
+					}
+					middle.style.backgroundColor = ocolor[idx];
+					//新信号量的图片淡入
+					animate(lis[idx], {
+						"opacity": 1
+					}, 200);
+					changeCircle();
+				}
+				//左按钮的监听
+			leftBtn.onclick = function() {
+					//函数截流
+					if (lis[idx].isanimated) return;
+					//原来的信号量的图片淡出
+					animate(lis[idx], {
+						"opacity": 0
+					}, 200);
+					//信号量改变
+					idx--;
+					if (idx < 0) {
+						idx = imgLength - 1;
+					}
+					middle.style.backgroundColor = ocolor[idx];
+					//新信号量的图片淡入
+					animate(lis[idx], {
+						"opacity": 1
+					}, 200);
+					changeCircle();
+				}
+				//批量添加小圆点的监听
+			for (var i = 0; i <= imgLength - 1; i++) {
+				circlesLi[i].index = i; //先编号
+				circlesLi[i].onclick = function() {
+					//截流
+					if (lis[idx].isanimated) return;
+					//原来的信号量的图片淡出
+					animate(lis[idx], {
+						"opacity": 0
+					}, 200);
+					//信号量改变
+					idx = this.index;
+					middle.style.backgroundColor = ocolor[idx];
+					//新信号量的图片淡入
+					animate(lis[idx], {
+						"opacity": 1
+					}, 200);
+					changeCircle();
+				}
+			}
+			 //更换小圆点函数
+			function changeCircle() {
+				//去掉所有小圆点的cur
+				for (var i = 0; i < circlesLi.length; i++) {
+					circlesLi[i].className = "";
+				}
+				//第信号量这个小圆点加cur
+				circlesLi[idx].className = "cur";
+			}
+		</script>
+	</body>
+
+</html>

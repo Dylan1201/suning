@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f8f8f8;
+}
+header{
+	width: 100%;
+	overflow: hidden;
+	
+}
+.frame{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header .frame{
+	height: 88px;
+}
+header .frame img{
+	float: left;
+	margin-right: 24px
+}
+header .frame p{
+    font-size: 18px;
+    color: #666;
+    line-height: 88px;
+    float: left;
+}
+header .frame span{
+	display: inline-block;
+	float: right;
+    margin-top: 63px;
+    font-size: 14px;
+}
+header .frame a{
+	color: #333;
+}
+header .frame a:hover{
+	color: #F60
+}
+.register .frame{
+    border: 1px solid #ddd;
+    border-top: 3px solid #f90;
+    background: #fff;
+    padding: 55px 0;
+    line-height: 1.5;
+}
+.register .frame .form{
+	width: 400px;
+	margin: 0 auto;
+}
+.register .frame .form .gift i{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url(../img/sprite1.png) no-repeat -74px -92px;
+	margin-right: 6px
+}
+.register .frame .form .gift{
+	font-size: 14px;
+}
+.register .frame .form b{
+	font-weight: normal;
+	color: #f40;
+}
+.register .frame .form span{
+	position: absolute;
+	color: #f40;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.register .frame .form .ture{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: -290px;
+	top: 10px;
+	background: url(../img/sprite1.png) no-repeat -120px -92px;
+	display: none;
+}
+.register .frame .form .username{
+	width: 378px;
+    height: 38px;
+    border: 1px solid #ccc;
+    line-height: 38px;
+    margin-bottom: 25px;
+    margin-top: 17px;
+    overflow: hidden;
+}
+.register .frame .form .username_box{
+	float: left;
+    width: 78px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    position: relative
+}
+.register .frame .form .username input{
+	border: none;
+	height: 40px;
+	width: 290px;
+	outline-style: none;
+	display: block;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 38px;
+    float: left;
+}
+.register .frame .form .password{
+	width: 378px;
+    height: 38px;
+    border: 1px solid #ccc;
+    line-height: 38px;
+    margin-bottom: 25px;
+    overflow: hidden;
+} 
+.register .frame .form .password_box{
+	float: left;
+    width: 78px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    position: relative
+}
+.register .frame .form .password input{
+	border: none;
+	height: 40px;
+	width: 290px;
+	outline-style: none;
+	display: block;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 38px;
+    float: left;
+}
+.register .frame .form .affirm_password{
+	width: 378px;
+    height: 38px;
+    border: 1px solid #ccc;
+    line-height: 38px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}  
+.register .frame .form .affirm_password_box{
+	float: left;
+    width: 78px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    position: relative
+}
+.register .frame .form .affirm_password input{
+	border: none;
+	height: 40px;
+	width: 290px;
+	outline-style: none;
+	display: block;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 38px;
+    float: left;
+}
+.protocol{
+	font-size: 12px;
+}
+.protocol a{
+	color: #333;
+	text-decoration: none;	
+}
+.protocol a:hover{
+	color: #f60;
+}
+.enterprise_user i{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url(../img/sprite1.png) no-repeat -140px -89px;
+	margin-right: 5px;
+}
+.enterprise_user a{
+	color: #f60;
+	text-decoration: none;
+	font-size: 14px;
+}
+.submit{
+	width: 380px;
+    line-height: 40px;
+    background: #f60;
+    font-size: 20px;
+    color: #fff;
+    margin: 24px 0 5px;
+    border: none;
+}
+.submit_flase{
+	width: 380px;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 24px 0 5px;
+    border: none;
+    color: #999;
+    background: #d0d0d0
+}
+footer{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.black{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+}
+.black span{
+	margin: 0 8px
+}
+.black a{
+	color: #666666;
+	text-decoration: none;
+}
+.black a:hover{
+	color: #f60
+}
+.gray{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+.gray span{
+	margin: 0 8px
+}
+.gray a{
+	color: #999;
+	text-decoration: none;
+}
+.gray a:hover{
+	color: #f60
+}
+.bottom{
+	float: none;
+    margin: 0 auto;
+    height: 25px;
+    width: 1000px;
+    margin-top: 5px;
+    text-align: center;
+}
+.bottom a{
+	margin-right: 8px;
+	overflow: hidden;
+}
+
+
+
+

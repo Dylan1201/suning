@@ -1,0 +1,363 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.box {
+	width: 100%;
+	min-width: 1300px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+header {
+	width: 1000px;
+	margin: 0 auto;
+}
+.logo img {
+	width: 189px;
+}
+.top{
+	width: 790px;
+	height: 24px;
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	line-height: 24px;
+	position: absolute;
+	top: 40px;
+	border: 1px #fecd66 solid;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.content{
+	width: 100%;
+	height: 570px;
+	background-color: #FE1453;
+}
+.content_in{
+	margin: 0 auto;
+	width: 1300px;
+	position: relative;
+}
+.banner{
+	width: 100%;
+	height: 570px;
+}
+.banner_in{
+	margin: 0 auto;
+	height: 570px;
+	background: url(../img/yy.jpg) no-repeat 50%;
+}
+
+.tab {
+	position: absolute;
+	top: 70px;
+	right: 140px;
+	width: 360px;
+	height: 420px;
+
+  background-color: #FFFFFF;
+}
+.tab > .hd {
+  overflow: hidden;
+ 	height: 49px;
+ 	line-height: 50px;
+ 	border-bottom: 1px solid #ccc;
+ 	background-color: #FFFFFF;
+}
+.tab > .hd > span {
+position: relative;
+  float: left;
+  width: 179px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+    /*font-weight: bold;*/
+}
+#err{
+	display: block;
+	height: 20px;
+}
+/*.tab > .hd > span > .hx{
+	display: none;
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: #f60;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -35px;
+}*/
+.tab .hd .last{
+	border-left: 1px solid #ccc;
+}
+
+.tab > .hd > span.current {
+	color: #FF6600;
+	text-decoration: underline;
+}
+
+.tab > .hd > span:hover {
+  color: #f60;
+}
+.tab > .bd {
+	height: 220px;
+  padding: 25px 24px 5px;
+  overflow: hidden;
+  position: relative;
+}
+.tab > .bd > div {
+  display: none;
+}
+.tab > .bd > div.current {
+  display: block;
+}
+.tab > .bd > div.current > p{
+	width: 173px;
+	display: block;
+	margin: 30px auto 0 auto;
+	line-height: 16px;
+}
+.tab > .bd > div.current > p > i{
+	display: inline-block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	background: url(../img/sprite.png) no-repeat -164px -66px;
+}
+.tab > .bd > div.current > p > a{
+	color: #FF6600;
+}
+.tab > .bd > div.current > p > a:hover{
+	text-decoration: underline;
+}
+.tab .bd .current .saoma{
+	width: 151px;
+	height: 151px;
+	margin: 25px auto 0;
+}
+.tab .bd .current .saoma img{
+	width: 151px;
+	height: 151px;
+}
+.message .login input {
+	width: 310px;
+	height: 36px;
+	border: none;
+	outline: medium;
+	
+}
+
+.message .login span {
+	font-size: 10px;
+	display: block;
+	height: 10px;
+}
+.right {
+	color: green;
+}
+.error {
+	color: red;
+}
+.message .login .username{
+	display: block;
+	width: 310px;
+	height: 36px;
+	outline: medium;
+	border: 1px solid #ccc;
+	text-indent: 40px;
+}
+.message .login .username_1 > i{
+	position: absolute;
+	display: inline-block;
+	float: left;
+	width: 38px;
+	height: 38px;
+	background: url(../img/sprite.png) -80px -65px ;
+}
+.message .login .password_1 > i{
+	position: absolute;
+	display: inline-block;
+	float: left;
+	width: 38px;
+	height: 38px;
+	background: url(../img/sprite.png) -80px -65px ;
+}
+.message .login .password{
+	display: block;
+	width: 310px;
+	height: 36px;
+	margin: 25px 0 0 0;
+	outline: medium;
+	border: 1px solid #ccc;
+	text-indent: 40px;
+}
+
+#btn {
+	margin: 10px 0;
+	width: 310px;
+	height: 40px;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: "Microsoft Yahei";
+	background-color: #FF6600;
+	border: none;
+}
+.forget {
+	height: 10px;
+	float: right;
+	margin-top: 35px;
+	cursor: pointer;
+	color: #000000;
+	font-size: 12px;
+}
+
+.tab > .foot {
+
+  padding: 0px 24px;
+  position: relative;
+  height: 120px;
+}
+p{
+	font-size: 10px;
+}
+.forget:hover {
+	color: #FF6600;
+	text-decoration: underline;
+}
+.enroll {
+	padding: 10px 0;
+	height: 45px;
+	text-align: center;
+	font-size: 12px;
+}
+.enroll a:hover {
+	color: #FF6600;
+	text-decoration: underline;
+}
+.other{
+	width: 310px;
+	height: 50px;
+	position: absolute;
+	border-top: 1px solid #ccc;
+	font-size: 12px;
+}
+.useOther{
+	position: absolute;
+	top: -7px;
+	left: 95px;
+	width: 120px;
+	background-color: #FFFFFF;
+	text-align: center;
+	color: #999;
+}
+.other ul li{
+	margin: 15px 7px 0 2px;
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	height: 16px;
+	border-right: solid 1px #999;
+	padding-right: 8px;
+	line-height: 16px;
+}
+.other ul li i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/sprite.png) no-repeat;
+	float: left;
+	margin-right: 4px;
+}
+.other ul li .qq{
+	background-position: -90px -27px;
+}
+.other ul li .weichat{
+	background-position: -111px -27px;
+}
+.other ul li .yfb{
+	background-position: -132px -27px;
+}
+.other ul li a:hover{
+	color: #FF6600;
+	text-decoration: underline;
+}
+footer{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+	padding-bottom: 30px;
+}
+footer .black{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+}
+footer .black span{
+	margin: 0 8px
+}
+footer .black a{
+	color: #666666;
+	text-decoration: none;
+}
+footer .black a:hover{
+	color: #f60
+}
+footer .gray{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+footer .gray span{
+	margin: 0 8px
+}
+footer .gray a{
+	color: #999;
+	text-decoration: none;
+}
+footer .gray a:hover{
+	color: #f60
+}
+footer .bottom{
+	float: none;
+    margin: 0 auto;
+    height: 25px;
+    width: 1000px;
+    margin-top: 5px;
+    text-align: center;
+}
+footer .bottom a{
+	margin-right: 8px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+#hot-goods {
+	margin: 0 auto;
+	width: 1200px;
+	height: auto;
+	
+}
+.goods div img {
+	width: 200px;
+	height: 180px;	
+}
+
+main > ul > li{
+	float: left;
+	width: 200px;
+	height: 230px;
+	margin: 50px 10px 0px 20px;
+}
+main  ul > li > a > div{
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	margin: 5px 0;
+}
+main  ul > li > a > div > p{
+	width: 200px;
+	height: 15px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+main  ul > li > a .price{
+	color: red;
+	font-size: 14px;
+}
+.commodity{
+	margin-bottom: 100px;
+}
+.commodity_in .all{
+	/*height: 5000px;*/
+	overflow: hidden;
+}
+.commodity_in > div{
+	margin: 50px auto;
+	width: 1300px;
+	
+}
+
